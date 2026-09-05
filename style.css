@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', system-ui, monospace;
+}
+
+body {
+    background: #0b0e14;
+    color: #d4e4ff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    width: 100%;
+    background: #141a24;
+    padding: 30px 28px;
+    border-radius: 28px;
+    border: 1px solid #2a3344;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.8);
+}
+
+h1 {
+    color: #b7f0b1;
+    text-align: center;
+    font-size: 26px;
+    letter-spacing: 2px;
+    border-bottom: 1px solid #2a3344;
+    padding-bottom: 18px;
+    margin-bottom: 24px;
+}
+
+.section {
+    margin-bottom: 30px;
+    padding: 16px;
+    background: #0f151e;
+    border-radius: 16px;
+    border: 1px solid #1f293a;
+}
+
+.section h2 {
+    font-size: 18px;
+    margin-bottom: 14px;
+    color: #b0cbe5;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #9aaec9;
+}
+
+input[type="password"],
+input[type="number"] {
+    width: 100%;
+    padding: 12px 16px;
+    background: #0a0f17;
+    border: 1px solid #2a3344;
+    border-radius: 40px;
+    color: #fff;
+    font-size: 14px;
+    outline: none;
+    transition: 0.2s;
+}
+
+input[type="password"]:focus,
+input[type="number"]:focus {
+    border-color: #6b8cff;
+    box-shadow: 0 0 12px #2a4b9a66;
+}
+
+button {
+    background: #1f8b4c;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 12px 24px;
+    border-radius: 40px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.25s;
+    margin-top: 10px;
+    letter-spacing: 0.5px;
+}
+
+button:hover {
+    background: #28a85e;
+    transform: scale(1.02);
+    box-shadow: 0 0 20px #1f8b4c66;
+}
+
+button.secondary {
+    background: #2a3f5a;
+}
+
+button.secondary:hover {
+    background: #3a5a7a;
+}
+
+.flex-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    align-items: center;
+}
+
+.flex-row label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.flex-row input {
+    width: 90px;
+}
+
+#customerList {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-height: 300px;
+    overflow-y: auto;
+    padding-right: 6px;
+}
+
+.customer-item {
+    background: #0a0f17;
+    padding: 12px 16px;
+    border-radius: 12px;
+    border: 1px solid #253040;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.customer-item:hover {
+    border-color: #6b8cff;
+    background: #111b2a;
+}
+
+.customer-item .info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    font-size: 14px;
+}
+
+.customer-item .badge {
+    background: #1f8b4c33;
+    padding: 4px 12px;
+    border-radius: 40px;
+    font-size: 12px;
+    color: #b7f0b1;
+}
+
+#cardOutput {
+    background: #0a0f17;
+    border-radius: 12px;
+    padding: 16px;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    white-space: pre-wrap;
+    word-break: break-all;
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #1f293a;
+    margin-top: 12px;
+    color: #b3d0f0;
+    line-height: 1.6;
+}
+
+#status {
+    margin-top: 16px;
+    padding: 12px;
+    border-radius: 12px;
+    background: #1a1f2a;
+    color: #f0b3b3;
+    display: none;
+}
+
+#status.success {
+    color: #b7f0b1;
+    display: block;
+}
+
+#status.error {
+    color: #f0b3b3;
+    display: block;
+}
+
+.copy-btn {
+    background: #2a3f5a;
+    margin-top: 12px;
+}
+
+.copy-btn:hover {
+    background: #3a5a7a;
+}
