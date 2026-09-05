@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KKuser · Card Generator</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="container">
+    <h1>✦ KKuser Card Generator ✦</h1>
+
+    <!-- Step 1: Enter Stripe Secret Key -->
+    <div class="section">
+        <label for="secretKey">🔑 Stripe Live Secret Key</label>
+        <input type="password" id="secretKey" placeholder="sk_live_..." />
+        <button id="fetchCustomersBtn">📋 Fetch Customers</button>
+    </div>
+
+    <!-- Step 2: Customer List -->
+    <div class="section" id="customerSection" style="display: none;">
+        <h2>📇 Customer List</h2>
+        <div id="customerList"></div>
+    </div>
+
+    <!-- Step 3: Generate Cards -->
+    <div class="section" id="generateSection" style="display: none;">
+        <h2>🃏 Generate Cards</h2>
+        <div class="flex-row">
+            <label>Number of Cards:
+                <input type="number" id="cardCount" value="10" min="1" max="500" />
+            </label>
+            <button id="generateBtn">⚡ Generate Cards</button>
+        </div>
+        <div id="cardOutput"></div>
+        <button id="copyAllBtn" style="display: none;">📋 Copy All</button>
+    </div>
+
+    <!-- Status / Error -->
+    <div id="status"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
